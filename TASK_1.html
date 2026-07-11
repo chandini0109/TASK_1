@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+header{
+    background:#222;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+header h2{
+    color:#00d4a5;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#00d4a5;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:15px 35px;
+    background:#00d4a5;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#009b78;
+}
+
+/* Features */
+.features{
+    padding:60px 10%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:30%;
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.card h3{
+    color:#00d4a5;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:35px;
+}
+
+.features{
+    flex-direction:column;
+}
+
+.card{
+    width:100%;
+}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h2>My Landing Page</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Welcome to My Landing Page</h1>
+
+<p>Create beautiful websites using HTML & CSS.</p>
+
+<a href="#" class="btn">Get Started</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>Responsive Design</h3>
+<p>Works perfectly on desktop, tablet and mobile devices.</p>
+</div>
+
+<div class="card">
+<h3>Modern UI</h3>
+<p>Simple, clean and attractive user interface for beginners.</p>
+</div>
+
+<div class="card">
+<h3>Easy to Customize</h3>
+<p>Edit text, colors and images according to your project.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 My Landing Page | Designed using HTML & CSS</p>
+</footer>
+
+</body>
+</html>
